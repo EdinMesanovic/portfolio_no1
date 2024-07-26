@@ -1,0 +1,34 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - master  # Change this to your deployment branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
+
+    - name: Upload production-ready build files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        ftp-server: ${{ secrets.FTP_SERVER }}  # Replace with your cPanel FTP server
+        ftp-username: ${{ secrets.FTP_USERNAME }}  # Set in GitHub Secrets
+        ftp-password: ${{ secrets.FTP_PASSWORD }}  # Set in GitHub Secrets
+        local-dir: build  # Directory of the build files
+        server-dir: /public_html/your_subdomain  # Replace with your subdomain directory on cPanel
