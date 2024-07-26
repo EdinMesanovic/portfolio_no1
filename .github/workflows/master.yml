@@ -30,5 +30,3 @@ jobs:
         ftp-server: ${{ secrets.FTP_SERVER }}  # Replace with your cPanel FTP server
         ftp-username: ${{ secrets.FTP_USERNAME }}  # Set in GitHub Secrets
         ftp-password: ${{ secrets.FTP_PASSWORD }}  # Set in GitHub Secrets
-        local-dir: build  # Directory of the build files
-        server-dir: /public_html/your_subdomain  # Replace with your subdomain directory on cPanel

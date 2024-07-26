@@ -2,6 +2,7 @@
   "name": "portfolio_no1",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://portfolio.edinmesan.ba",
   "type": "module",
   "scripts": {
     "dev": "vite",
