@@ -29,7 +29,7 @@ jobs:
 
     - name: Verify build directory exists
       run: |
-        if [ ! -d "dist" ]; then
+        if [ ! -D "dist" ]; then
           echo "Build directory does not exist"
           exit 1
         fi
