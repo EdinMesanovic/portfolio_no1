@@ -27,6 +27,14 @@ jobs:
     - name: List build directory contents (for debugging)
       run: ls -la dist/
 
+    - name: Verify build directory exists
+      run: |
+        if [ ! -d "dist" ]; then
+          echo "Build directory does not exist"
+          exit 1
+        fi
+        ls -la dist/
+
     - name: Upload production-ready build files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
