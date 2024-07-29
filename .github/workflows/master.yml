@@ -24,11 +24,15 @@ jobs:
     - name: Build project
       run: npm run build
 
+    - name: List build directory contents (for debugging)
+      run: ls -la dist/
+
     - name: Upload production-ready build files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        server: ${{ secrets.FTP_SERVER }}  # Replace with your cPanel FTP server
+        server: ${{ secrets.FTP_SERVER }}  # Your cPanel FTP server
         username: ${{ secrets.FTP_USERNAME }}  # Set in GitHub Secrets
         password: ${{ secrets.FTP_PASSWORD }}  # Set in GitHub Secrets
         protocol: ftp
-        local-dir: dist/  # Adjust this if your build directory is different
+        local-dir: dist/  # Ensure this ends with a /
+        server-dir: /portfolio.edinmesan.ba/  # Ensure this ends with a /
