@@ -32,4 +32,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}  # Set in GitHub Secrets
         protocol: ftp
         local-dir: dist  # Adjust this if your build directory is different
-        server-dir: /portfolio.edinmesan.ba   # Replace with the document root of your subdomain
+        server-dir: /portfolio.edinmesan.ba/   # Replace with the document root of your subdomain
