@@ -27,6 +27,6 @@ jobs:
     - name: Upload production-ready build files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        ftp-server: ${{ secrets.FTP_SERVER }}  # Replace with your cPanel FTP server
-        ftp-username: ${{ secrets.FTP_USERNAME }}  # Set in GitHub Secrets
-        ftp-password: ${{ secrets.FTP_PASSWORD }}  # Set in GitHub Secrets
+        server: ${{ secrets.FTP_SERVER }}  # Replace with your cPanel FTP server
+        username: ${{ secrets.FTP_USERNAME }}  # Set in GitHub Secrets
+        password: ${{ secrets.FTP_PASSWORD }}  # Set in GitHub Secrets
