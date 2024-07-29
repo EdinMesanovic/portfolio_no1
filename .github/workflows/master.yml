@@ -42,5 +42,3 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}  # Set in GitHub Secrets
         password: ${{ secrets.FTP_PASSWORD }}  # Set in GitHub Secrets
         protocol: ftp
-        local-dir: dist/  # Ensure this ends with a /
-        server-dir: /
