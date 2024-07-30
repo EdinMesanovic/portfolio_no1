@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import CV from "../../assets/Edin-Mešanović-CV.pdf"
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
                 </li>
 
                 <li>
-                    <a href="#portfolio" className="footer__link">Portfolio</a>
+                    <a href={CV} className="footer__link">Portfolio</a>
                 </li>
 
                 <li>
