@@ -14,11 +14,11 @@ const Footer = () => {
                 </li>
 
                 <li>
-                    <a href={CV} className="footer__link">Portfolio</a>
+                    <a download='' href={CV} className="footer__link" target='_blank'>Portfolio</a>
                 </li>
 
                 <li>
-                    <a href="#testimonials" className="footer__link">Testimonials</a>
+                    <a href="#projects" className="footer__link">Projects</a>
                 </li>
             </ul>
 
