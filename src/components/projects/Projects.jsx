@@ -43,13 +43,13 @@ const Projects = () => {
               <i className="uil uil-external-link-alt projects__button-icon"></i>
             </a>
           </div>
-          <div className="projects__content">
+          {/* <div className="projects__content">
             <img src={SusaraLandingPage} alt="Project Image" className="projects__image" />
 
             <a href='https://susara-landingpage.edinmesan.ba/' className="projects__button" target='_blank'>
               <i className="uil uil-external-link-alt projects__button-icon"></i>
             </a>
-          </div>
+          </div> */}
         </div>
     </section>
   )
