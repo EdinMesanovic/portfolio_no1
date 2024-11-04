@@ -28,11 +28,15 @@ const Footer = () => {
                 </a>
 
                 <a href="https://github.com/EdinMesanovic" className="footer__social-link" target='_blank'>
-                    <i className="uil uil-github-alt"></i>
+                    <i className="uil uil-github"></i>
                 </a>
+
+                <a href="https://www.linkedin.com/in/edin-mesanovic-966b941b0/" className="footer__social-link" target='_blank'>
+                    <i className="uil uil-linkedin"></i>
+                </a>                
             </div>
 
-            <span className='footer__copy'>&#169; Crypticalcoder. All rigths reserved</span>
+            <span className='footer__copy'>&#169; Edin Mesanovic. All rights reserved</span>
         </div>
     </footer>
   )

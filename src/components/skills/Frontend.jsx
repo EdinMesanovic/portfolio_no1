@@ -20,8 +20,8 @@ const Frontend = () => {
                     <i className="bx bx-badge-check"></i>
 
                     <div>
-                        <h3 className="skills__name">HTML</h3>
-                        <span className="skills__level">Proficient</span>
+                        <h3 className="skills__name">React Native</h3>
+                        <span className="skills__level">Beginner</span>
                     </div>
                 </div>
 
