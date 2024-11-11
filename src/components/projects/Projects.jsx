@@ -5,6 +5,7 @@ import TiBih from '../../assets/ti-bih.png'
 import Meridian from '../../assets/meridian-imel.png'
 import Susara from '../../assets/susara.png'
 import SusaraLandingPage from '../../assets/susara-landingpage.png'
+import EpBih from '../../assets/epbih.png'
 
 const Projects = () => {
   return (
@@ -33,6 +34,13 @@ const Projects = () => {
             <img src={Meridian} alt="Project Image" className="projects__image" />
 
             <a href='https://meridian.imel.cloud/app/login' className="projects__button" target='_blank'>
+              <i className="uil uil-external-link-alt projects__button-icon"></i>
+            </a>
+          </div>
+          <div className="projects__content">
+            <img src={EpBih} alt="Project Image" className="projects__image" />
+
+            <a href='https://mojaenergija.epbih.ba/' className="projects__button" target='_blank'>
               <i className="uil uil-external-link-alt projects__button-icon"></i>
             </a>
           </div>
