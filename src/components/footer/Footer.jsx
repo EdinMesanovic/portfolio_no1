@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import CV from "../../assets/Edin-Mešanović-CV.pdf"
+import CV from "../../assets/Edin-Mesanovic-CV-eng.pdf"
 
 const Footer = () => {
   return (

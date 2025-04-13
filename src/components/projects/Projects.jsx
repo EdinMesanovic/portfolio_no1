@@ -6,6 +6,7 @@ import Meridian from '../../assets/meridian-imel.png'
 import Susara from '../../assets/susara.png'
 import SusaraLandingPage from '../../assets/susara-landingpage.png'
 import EpBih from '../../assets/epbih.png'
+import Luchat8 from '../../assets/luchat8.png'
 
 const Projects = () => {
   return (
@@ -48,6 +49,13 @@ const Projects = () => {
             <img src={Susara} alt="Project Image" className="projects__image" />
 
             <a href='https://susara.edinmesan.ba/login' className="projects__button" target='_blank'>
+              <i className="uil uil-external-link-alt projects__button-icon"></i>
+            </a>
+          </div>
+          <div className="projects__content">
+            <img src={Luchat8} alt="Project Image" className="projects__image" />
+
+            <a href='https://www.luchat8.rs' className="projects__button" target='_blank'>
               <i className="uil uil-external-link-alt projects__button-icon"></i>
             </a>
           </div>
