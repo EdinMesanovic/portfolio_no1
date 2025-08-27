@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./header.css"
-import CV from "../../assets/Edin-Mešanović-CV.pdf"
+import CV from "../../assets/Edin-Mesanovic-CV.pdf"
 
 
 const Header = () => {

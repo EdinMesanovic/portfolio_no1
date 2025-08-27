@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import AboutImg from "../../assets/avatar.png"
-import CV from "../../assets/Edin-Mesanovic-CV-eng.pdf"
+import CV from "../../assets/Edin-Mesanovic-CV.pdf"
 import Info from './Info'
 
 
